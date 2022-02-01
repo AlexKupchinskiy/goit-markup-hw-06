@@ -361,17 +361,78 @@
     </div>
   </footer>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-button" data-modal-close><svg class="modal-close" width=18px height=18px>
-        <use href="./image/icons.svg#close-black"></use>
-      </svg>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close><svg class="modal-close" width=18px height=18px>
+            <use href="./image/icons.svg#close-black"></use>
+          </svg>
+        </button>
 
-    </button>
-  </div>
-</div>
+        <button class="modal-button-close" data-modal-close>
+          <svg class="modal-close" width=18px height=18px>
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="form-elements">
+          <div class="form-field">
+            <label class="form-label" for="username">Имя</label>
+            <div class="form-input">
+              <input type="text" name="username" id="username" autocomplete="off">
+              <svg class="input-pic" width=18px height=18px>
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
 
-<script src="./js/modal.js"></script>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="phone-nomber">Телефон</label>
+            <div class="form-input">
+              <input type="tel" name="phone-nomber" id="phone-nomber" autocomplete="off">
+              <svg class="input-pic" width=18px height=18px>
+                <use href="./images/icons.svg#telephone"></use>
+              </svg>
+            </div>
+
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">Почта</label>
+            <div class="form-input">
+              <input type="email" name="email" id="email" autocomplete="off">
+              <svg class="input-pic" width=18px height=18px>
+                <use href="./images/icons.svg#email-form"></use>
+              </svg>
+            </div>
+
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+        </div>
+        <div class="form-field-checkbox">
+
+          <label class="form-label">
+            <input class="checkbox" type="checkbox" name="agree">
+            <span class="custom-checkbox"></span> Соглашаюсь с рассылкой и принимаю &#8201; <a href=""> Условия договора</a>
+
+          </label>
+
+        </div>
+        <button class="button-form" type="submit"> Отправить</button>
+
+
+        </form>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <script src="./js/modal.js"></script>
+
 
  </body>
  </html>
